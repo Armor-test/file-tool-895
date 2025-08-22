@@ -1,0 +1,38 @@
+# CODEOWNERS file for file-tool-895
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-apps @Armor-test/squad-qa @Armor-test/dept-reliability
+
+# Directory ownership
+/internal/ @Armor-test/squad-cache @Armor-test/squad-apps
+/assets/ @Armor-test/grp-integration @Armor-test/dept-data @Armor-test/grp-reporting
+/common/ @Armor-test/team-governance @Armor-test/dept-identity
+/helpers/ @Armor-test/grp-api @Armor-test/dept-identity
+/extensions/ @Armor-test/team-logging @Armor-test/squad-tooling @Armor-test/squad-performance
+/plugins/ @Armor-test/unit-test @Armor-test/team-notifications @Armor-test/unit-cloud
+/pkg/ @Armor-test/team-notifications @Armor-test/dept-billing
+/deploy/ @Armor-test/dept-logging @Armor-test/team-notifications @Armor-test/dept-test
+/pages/ @Armor-test/team-core @Armor-test/squad-performance
+/test/ @Armor-test/squad-reporting @Armor-test/dept-logging @Armor-test/squad-search
+/middleware/ @Armor-test/squad-apps @Armor-test/squad-payments
+/third_party/ @Armor-test/squad-apps @Armor-test/dept-logging
+/hooks/ @Armor-test/unit-design @Armor-test/dept-automation @Armor-test/grp-integration
+/build/ @Armor-test/dept-identity @Armor-test/grp-storage @Armor-test/team-governance
+
+# File type ownership
+*.proto @Armor-test/team-research @Armor-test/team-frontend @Armor-test/squad-reporting
+*.kt @Armor-test/dept-reporting @Armor-test/squad-product
+*.tsx @Armor-test/unit-governance @Armor-test/grp-reporting @Armor-test/squad-payments
+*.jsx @Armor-test/team-governance @Armor-test/dept-api @Armor-test/squad-payments
+*.php @Armor-test/squad-ml @Armor-test/squad-ux @Armor-test/squad-reporting
+*.js @Armor-test/dept-notifications @Armor-test/dept-automation
+*.go @Armor-test/unit-test @Armor-test/grp-search @Armor-test/squad-api
+*.xml @Armor-test/dept-reporting @Armor-test/team-reporting
+*.scss @Armor-test/dept-ui @Armor-test/squad-database
+*.lock @Armor-test/squad-ux @Armor-test/dept-logging @Armor-test/dept-test
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
